@@ -1,0 +1,247 @@
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, em,
+img, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu,
+nav, section, menu, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: rgb(183, 182, 182);
+}
+
+del {
+  text-decoration: line-through;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+body, select, input, textarea {
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(219, 215, 215);
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+select {
+  margin: 8px 0 8px 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.bootstrap-select .btn:focus {
+  outline: none !important;
+  background-color: transparent;
+}
+
+/* For default browser setting */
+select:not([multiple]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.5em;
+  padding-right: 1.5em;
+  outline: none;
+  background-color: transparent;
+}
+
+p {
+  width: clamp(45ch, 50%, 75ch);
+}
+
+.card {
+  width: clamp(45ch, 50%, 75ch);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: end;
+}
+
+#home-page {
+  background-color: rgb(249, 247, 247);
+}
+
+.jason-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  outline: 5px solid pink;
+  margin: 1em;
+}
+
+.jason-container {
+  margin-top: 60%;
+  margin-bottom: 60%;
+}
+
+@media (min-width: 700px) {
+  .jason-container {
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+}
+#homepage .contact-tab {
+  margin-bottom: 6em;
+}
+
+#home-page a {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#home-page h1 {
+  font-size: 2.25rem;
+}
+#home-page h1:hover {
+  color: palevioletred;
+}
+@media (min-width: 700px) {
+  #home-page h1 {
+    font-size: 4.5rem;
+  }
+}
+
+#home-page .projects-tab {
+  font-size: 1.75rem;
+  margin-left: 20px;
+  color: rgb(165, 165, 165);
+}
+#home-page .projects-tab:hover {
+  color: red;
+}
+
+@media (min-width: 700px) {
+  #home-page .projects-tab {
+    font-size: 3.5rem;
+  }
+}
+#home-page .contact-tab {
+  font-size: 1.75rem;
+  margin-left: 20px;
+  color: rgb(186, 182, 182);
+}
+
+@media (min-width: 700px) {
+  #home-page .contact-tab {
+    font-size: 3.5rem;
+  }
+}
+.jason-container h2 {
+  color: red;
+}
+
+.open > .dropdown-menu {
+  display: flex;
+  offset: none;
+}
+
+.btn-secondary {
+  background-color: rgba(250, 250, 250, 0);
+  color: gray;
+  border: none;
+  font-size: 3rem;
+  box-shadow: none;
+}
+.btn-secondary:hover {
+  color: pink;
+  background-color: rgba(250, 250, 250, 0);
+  border: none;
+}
+
+.btn-secondary {
+  outline: none;
+  transition: none;
+}
+
+.btn:focus, .btn:active:focus {
+  offset: none;
+  outline: none;
+  outline-offset: 0px;
+}
+
+.btn-check:active + .btn-secondary:focus, .btn-check:checked + .btn-secondary:focus, .btn-secondary.active:focus, .btn-secondary:active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0);
+}
+
+.dropdown-menu:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0);
+}
+
+.btn-secondary:target {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0);
+  outline-offset: 0px;
+  outline: white;
+  border: white;
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  box-shadow: none;
+}
+.dropdown-menu:hover {
+  background-color: rgba(250, 250, 250, 0);
+  border: none;
+}
+
+.btn-group:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropright {
+  position: relative;
+}
+
+.dropright .dropdown-menu {
+  top: 0;
+  left: 15%;
+  margin-top: -1px;
+}
+
+.dropdown-item {
+  color: pink;
+}
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  color: pink;
+  font-weight: bold;
+}/*# sourceMappingURL=jason.css.map */

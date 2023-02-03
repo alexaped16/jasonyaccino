@@ -1,0 +1,6 @@
+.card{
+    width: clamp(45ch, 50%, 75ch);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+}

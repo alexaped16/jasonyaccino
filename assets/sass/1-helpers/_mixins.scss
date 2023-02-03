@@ -1,0 +1,71 @@
+@mixin push--auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+  }
+  
+  @mixin flex-center-vert {
+    display: flex;
+    align-items: center;
+  }
+  
+  @mixin flex-center-horiz {
+    display: flex;
+    justify-content: center;
+  }
+
+  @mixin vertical-center {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+ }
+
+ @mixin abs-position ($top, $right, $bottom, $left) {
+    position: absolute; 
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+ }
+
+  @mixin cover-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
+  @mixin breakpoint($point) {
+    @if $point == small {
+      @media (min-width: $small) { @content; }
+    } @else if $point == medium {
+      @media (min-width: $medium) { @content; }
+    } @else if $point == large {
+      @media (min-width: $large) { @content; }
+    } @else if $point == wide {
+      @media (min-width: $wide) { @content; }
+    } @else {
+      @warn 'Not a valid breakpoint name.';
+    }
+  }
+  
