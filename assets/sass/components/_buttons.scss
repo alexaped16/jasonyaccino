@@ -1,0 +1,46 @@
+.btn-check:active+.btn-secondary:focus, .btn-check:checked+.btn-secondary:focus, .btn-secondary.active:focus, .btn-secondary:active:focus, .show>.btn-secondary.dropdown-toggle:focus{
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0); 
+}
+
+.btn-secondary:focus, .btn-secondary:active:focus{
+    color: $projects; 
+}
+
+.btn-tertiary:focus, .btn-tertiary:active:focus{
+    color: $contact;  
+}
+
+.btn-secondary{
+    background-color: rgba(250, 250, 250, 0);
+    color: gray;
+    border: none;
+    font-size: 3rem;
+    box-shadow: none;   
+    
+    &:hover{
+        color: $projects;
+        background-color: rgba(255, 255, 255, 0);
+        border: none; 
+    }
+}
+
+.btn-tertiary{
+    background-color: rgba(250, 250, 250, 0);
+    color: gray;
+    border: none;
+    font-size: 3rem;
+    box-shadow: none;   
+    
+    &:hover{
+        color: $projects;
+        background-color: rgba(255, 255, 255, 0);
+        border: none; 
+    }
+}
+
+@media(max-width: 500px) {
+    .btn-secondary{
+        font-size: 10px;
+        background-color: pink;  
+    }
+}
