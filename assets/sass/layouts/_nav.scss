@@ -1,0 +1,15 @@
+.jy{
+    font-size: 40px; 
+}
+
+@media (max-width: 700px){
+    .jy{
+        font-size: 30px; 
+    }
+}
+
+@media (max-width: 400px){
+    .jy{
+        font-size: 20px; 
+    }
+}

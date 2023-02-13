@@ -10,12 +10,15 @@
 // 3 - COMPONENTS
 @import 'components/buttons';
 @import 'components/cards';
+@import 'components/dropdown';
 
 // 4 - LAYOUTS
 @import 'layouts/footer';
 @import 'layouts/forms';
+@import 'layouts/gallery';
 @import 'layouts/grid';
 @import 'layouts/header';
+@import 'layouts/nav';
 
 // 5 - Pages
 @import 'pages/home';

@@ -1,0 +1,48 @@
+
+.gallery-grid-wrapper{
+    text-align: center;
+}
+  
+  // Flexbox Gallery Grid
+  .gallery-grid{
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      &-item{
+          min-width: 250px;
+          max-width: 250px;
+          flex: 1 1 250px;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          margin-bottom: 2rem;
+      }
+}
+  
+
+  
+.gallery-grid{
+    &-item{
+        figure{
+            padding: 0;
+            margin: 0;
+            
+            img{
+                display: block;
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+a:not([href]):not([class]){ 
+    color: $gray;
+    
+    &:hover{
+        color: $projects; 
+    }
+}
+

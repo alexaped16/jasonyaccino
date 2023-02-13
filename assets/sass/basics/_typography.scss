@@ -1,5 +1,23 @@
-p {
-    width: clamp(45ch, 50%, 75ch);
+h1{
+    color: $gray;
+    font-size: 40px;  
+}
+
+@media (max-width: 700px){
+    h1{
+        font-size: 30px; 
+    }
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 20px; 
+    }
+}
+
+h3{
+    color: $gray;
+    font-size: 20px;  
 }
 
 
